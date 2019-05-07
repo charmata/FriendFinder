@@ -1,7 +1,11 @@
-app.get("/api/friends", (req, res) => {
-  res.json();
-});
+var path = require("path");
 
-app.post("/api/friends", (req, res) => {
-  res.send("Successfully added friend");
-});
+module.exports = app => {
+  app.get("/api/friends", (req, res) => {
+    res.json();
+  });
+
+  app.post("/api/friends", (req, res) => {
+    res.send("Successfully added friend");
+  });
+};
