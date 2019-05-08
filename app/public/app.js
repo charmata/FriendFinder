@@ -7,7 +7,7 @@ var submit = () => {
       .addClass("text-center");
     var image = $("<img>")
       .attr("src", res.photo)
-      .css({ display: "block", margin: "auto", "max-height": "300px" });
+      .css({ display: "block", margin: "auto", "max-height": "300px", "max-width": "100%" });
     $(".modal-body").append(name, image);
     $(".modal").modal("show");
   });
