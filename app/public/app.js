@@ -7,7 +7,7 @@ var submit = () => {
 
 $(document).ready(() => {
   if (window.location.href.includes("/survey")) {
-    $("#submit").on("click", e => {
+    $("form").submit(e => {
       e.preventDefault();
       submit();
     });

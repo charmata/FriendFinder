@@ -25,22 +25,22 @@
         <div class="col-12 col-md-7 col-lg-6">
           <h1>Survey Questions</h1>
           <hr />
-          <form action="/api/friends" method="post">
+          <form action="">
             <h3>About You</h3>
             <div class="form-group">
               <label for="name">Name (Required)</label>
-              <input type="text" class="form-control" id="name" name="name" />
+              <input type="text" class="form-control" id="name" name="name" required />
             </div>
             <div class="form-group">
               <label for="photo">Link to Photo Image (Required)</label>
-              <input type="url" class="form-control" id="photo" name="photo" />
+              <input type="url" class="form-control" id="photo" name="photo" required />
             </div>
             <hr />
             <div class="form-group">
               <h3>Question 1</h3>
               <label for="q-1">Your mind is always buzzing with unexplored ideas and plans.</label>
-              <select id="q-1" name="q-1" class="form-control">
-                <option disabled selected>Choose an Option</option>
+              <select id="q-1" name="q-1" class="form-control" required>
+                <option value="" disabled selected>Choose an Option</option>
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -51,8 +51,8 @@
             <div class="form-group">
               <h3>Question 2</h3>
               <label for="q-2">Generally speaking, you rely more on your experience than your imagination.</label>
-              <select id="q-2" name="q-2" class="form-control">
-                <option disabled selected>Choose an Option</option>
+              <select id="q-2" name="q-2" class="form-control" required>
+                <option value="" disabled selected>Choose an Option</option>
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -63,8 +63,8 @@
             <div class="form-group">
               <h3>Question 3</h3>
               <label for="q-3">You find it easy to stay relaxed and focused even when there is some pressure.</label>
-              <select id="q-3" name="q-3" class="form-control">
-                <option disabled selected>Choose an Option</option>
+              <select id="q-3" name="q-3" class="form-control" required>
+                <option value="" disabled selected>Choose an Option</option>
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -75,8 +75,8 @@
             <div class="form-group">
               <h3>Question 4</h3>
               <label for="q-4">You rarely do something just out of sheer curiosity.</label>
-              <select id="q-4" name="q-4" class="form-control">
-                <option disabled selected>Choose an Option</option>
+              <select id="q-4" name="q-4" class="form-control" required>
+                <option value="" disabled selected>Choose an Option</option>
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -87,8 +87,8 @@
             <div class="form-group">
               <h3>Question 5</h3>
               <label for="q-5">People can rarely upset you.</label>
-              <select id="q-5" name="q-5" class="form-control">
-                <option disabled selected>Choose an Option</option>
+              <select id="q-5" name="q-5" class="form-control" required>
+                <option value="" disabled selected>Choose an Option</option>
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -99,8 +99,8 @@
             <div class="form-group">
               <h3>Question 6</h3>
               <label for="q-6">It is often difficult for you to relate to other people’s feelings.</label>
-              <select id="q-6" name="q-6" class="form-control">
-                <option disabled selected>Choose an Option</option>
+              <select id="q-6" name="q-6" class="form-control" required>
+                <option value="" disabled selected>Choose an Option</option>
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -111,8 +111,8 @@
             <div class="form-group">
               <h3>Question 7</h3>
               <label for="q-7">In a discussion, truth should be more important than people’s sensitivities.</label>
-              <select id="q-7" name="q-7" class="form-control">
-                <option disabled selected>Choose an Option</option>
+              <select id="q-7" name="q-7" class="form-control" required>
+                <option value="" disabled selected>Choose an Option</option>
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -123,8 +123,8 @@
             <div class="form-group">
               <h3>Question 8</h3>
               <label for="q-8">You rarely get carried away by fantasies and ideas.</label>
-              <select id="q-8" name="q-8" class="form-control">
-                <option disabled selected>Choose an Option</option>
+              <select id="q-8" name="q-8" class="form-control" required>
+                <option value="" disabled selected>Choose an Option</option>
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -138,8 +138,8 @@
                 >You think that everyone’s views should be respected regardless of whether they are supported by facts
                 or not.
               </label>
-              <select id="q-9" name="q-9" class="form-control">
-                <option disabled selected>Choose an Option</option>
+              <select id="q-9" name="q-9" class="form-control" required>
+                <option value="" disabled selected>Choose an Option</option>
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -150,8 +150,8 @@
             <div class="form-group">
               <h3>Question 10</h3>
               <label for="q-10">You feel more energetic after spending time with a group of people.</label>
-              <select id="q-10" name="q-10" class="form-control">
-                <option disabled selected>Choose an Option</option>
+              <select id="q-10" name="q-10" class="form-control" required>
+                <option value="" disabled selected>Choose an Option</option>
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
