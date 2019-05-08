@@ -1,7 +1,14 @@
 var submit = () => {
   var data = $("form").serializeArray();
   $.post("/api/friends", data).then(res => {
-    console.log(res);
+    $(".modal-body").empty();
+    var name = $("<h5>")
+      .text(res.name)
+      .addClass("text-center");
+    var image = $("<img>")
+      .attr("src", res.photo)
+      .css({ display: "block", margin: "auto", "max-height": "300px" });
+    $(".modal-body").append(name, image);
     $(".modal").modal("show");
   });
 };

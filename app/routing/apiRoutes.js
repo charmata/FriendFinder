@@ -29,7 +29,6 @@ module.exports = app => {
     });
     var newFriend = { name: req.body.name, photo: req.body.photo, scores: scores };
     var friend = findFriend(newFriend.scores);
-    //res.send("Successfully added friend");
     res.json(friend);
     friends.push(newFriend);
   });
