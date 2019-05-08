@@ -1,6 +1,20 @@
 var path = require("path");
 var friends = require("../data/friends");
 
+var findFriend = user => {
+  var diff = [];
+  friends.forEach((friend, i) => {
+    var user2 = friend.scores;
+    var total = 0;
+    user2.forEach((score, i) => {
+      total += Math.abs(user[i] - score);
+    });
+    diff[i] = total;
+  });
+  var match = diff.indexOf(Math.min(...diff));
+  return friends[match];
+};
+
 module.exports = app => {
   app.get("/api/friends", (req, res) => {
     res.json(friends);
@@ -13,7 +27,10 @@ module.exports = app => {
         scores.push(parseInt(req.body[key]));
       }
     });
-    friends.push({ name: req.body.name, photo: req.body.photo, scores: scores });
-    res.send("Successfully added friend");
+    var newFriend = { name: req.body.name, photo: req.body.photo, scores: scores };
+    var friend = findFriend(newFriend.scores);
+    //res.send("Successfully added friend");
+    res.json(friend);
+    friends.push(newFriend);
   });
 };
