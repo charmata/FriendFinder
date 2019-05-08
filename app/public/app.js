@@ -1,5 +1,6 @@
 var submit = () => {
-  $.post("/api/friends", data => {
+  var data = $("form").serializeArray();
+  $.post("/api/friends", data).then(res => {
     $(".modal").modal("show");
   });
 };
